@@ -6,6 +6,7 @@ const emojiData = require('./emojiData.json');
 const client = new Discord.Client();
 
 const prefix = '!'; // You can change this to any prefix you prefer
+//make an array like: ['!', '?', '-'] to have multiple prefixes
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
