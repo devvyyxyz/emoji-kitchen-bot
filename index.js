@@ -32,9 +32,9 @@ client.on('message', async (message) => {
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const command = args.shift().toLowerCase();
 
-  if (command === 'emojikitchen') {
+  if (command === 'emojikitchen', 'cook', 'cut') {
     if (args.length !== 2) {
-      message.reply('Please provide two emojis as arguments.');
+      message.reply('Please provide two emojis as arguments!');
       return;
     }
 
@@ -44,21 +44,20 @@ client.on('message', async (message) => {
     const leftEmoji = emojiUnicode(theleftEmoji)
     const rightEmoji = emojiUnicode(therightEmoji)
 
-
-
     const combo = findValidEmojiCombo(leftEmoji, rightEmoji, emojiData);
 
     if (combo) {
       const url = googleRequestUrl(combo);
-      message.reply(`Here is the Emoji Kitchen combination: ${url}`);
+      message.reply(`Here is the combination all dashed up for you: ${url}`);
     } else {
       console.log(leftEmoji + rightEmoji + combo)
-      message.reply('Sorry, this emoji combination is not available.');
+      message.reply('Sorry, this emoji combination is not available at the moment consider reporting tjis as an issue here: https://github.com/devvyyxyz/emoji-kitchen-bot');
     }
   }
+  
 });
 
-client.login('your-token-goes-here'); //replace with your discord bot token!
+client.login(process.env.token); //replace with your discord bot token!
 
 function findValidEmojiCombo(leftEmoji, rightEmoji, emojiData) {
   for (const key in emojiData) {
