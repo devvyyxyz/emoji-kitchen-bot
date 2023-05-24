@@ -12,7 +12,7 @@ A Discord bot that brings the power of [Google's Emoji Kitchen](https://github.c
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Trixzyy/emoji-kitchen-bot.git
+git clone https://github.com/devvyyxyz/emoji-kitchen-bot.git
 ```
 
 2. Navigate to the project folder and install the dependencies:
@@ -25,7 +25,7 @@ npm install
 3. And replace this line:
 
 ```javascript
-client.login('your-token-goes-here');
+client.login('');
 ```
 
 4. Run the bot:
