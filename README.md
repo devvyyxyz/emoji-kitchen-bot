@@ -1,4 +1,4 @@
-# 🍳 Emoji Kitchen 
+# 🍳 Emoji Kitchen bot
 
 A Discord bot that brings the power of [Google's Emoji Kitchen](https://github.com/xsalazar/emoji-kitchen) to your server. Combine two emojis to create a unique mashup. This bot is based on the Emoji Kitchen project by [xsalazar](https://github.com/xsalazar).
 
@@ -41,7 +41,7 @@ Your bot should now be running and ready to join your server!
 Invite the bot to your Discord server and use the `!emojikitchen` command followed by two emojis:
 
 ```
-!emojikitchen :emoji1: :emoji2:
+`!emojikitchen :emoji1: :emoji2:`
 ```
 
 The bot will reply with the combination image URL from the Emoji Kitchen if it's available.
