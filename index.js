@@ -11,6 +11,10 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+// client.user.setActivity("with depression", {
+//  type: "STREAMING",
+//  url: "https://www.twitch.tv/monstercat"
+//});
 function emojiUnicode (emoji) {
   var comp;
   if (emoji.length === 1) {
