@@ -5,10 +5,16 @@ const emojiData = require('./emojiData.json');
 
 const client = new Discord.Client();
 
-const prefix = '!'; // You can change this to any prefix you prefer
+const prefix = 'emo.'; // You can change this to any prefix you prefer
+
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+
+  client.user.setActivity({
+    name: "with the emojis | use emo.help"
+  })
 });
 
 // client.user.setActivity("with depression", {
